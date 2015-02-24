@@ -27,7 +27,7 @@
   "dependencies": {
     "gulp-typescript":"^2.4.2",
     "gulp-concat":"^2.5.2",
-    "underscore": "^1.7.0",
+    "underscore": "^1.7.0"
   },
   "directories": {}
 }
