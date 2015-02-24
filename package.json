@@ -28,8 +28,6 @@
     "gulp-typescript":"^2.4.2",
     "gulp-concat":"^2.5.2",
     "underscore": "^1.7.0",
-    "gulp-if": "^1.2.5",
-    "gulp-load-plugins": "^0.7.1",
   },
   "directories": {}
 }
