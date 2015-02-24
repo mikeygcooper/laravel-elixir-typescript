@@ -5,7 +5,8 @@ var ts = require('gulp-typescript');
 var concat = require('gulp-concat');
 var _ = require('underscore');
 
-var inProduction = elixir.config.production;
+// Laravel Elixir Reporter
+var _laravelReporter = require('./reporter');
 
 elixir.extend('typescript', function(output, dest, options) {
 
@@ -18,12 +19,10 @@ elixir.extend('typescript', function(output, dest, options) {
 
     gulp.task(pluginName, function () {
         var tsResult = gulp.src('./resources/assets/typescript/**/*.ts')
-            .pipe(ts(options));
-
+            .pipe(ts(options, undefined, _laravelReporter.ElixirMessage()));
         return tsResult
             .pipe(concat(output))
             .pipe(gulp.dest(dest || './public/js'))
-            .pipe(new Notification().message('Typescript Compiled!'));
     });
 
     elixir.config.registerWatcher(
