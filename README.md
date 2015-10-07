@@ -1,6 +1,8 @@
 laravel-elixir-typescript
 ========================
 
+__Please note that I'm no longer maintaining this plugin as I no longer use it. Please use the fork by okaufmann which works with the latest version of Elixir: https://github.com/okaufmann/laravel-elixir-typescript__
+
 ## Usage
 A simple [gulp-typescript](https://github.com/ivogabe/gulp-typescript) wrapper ingredient for Laravel Elixir.
 
